@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+.main{
+    margin-top: 5px;
+    background-color: rgb(237, 252, 252);
+    height: 100vh;
+}
+.head{
+    font-family: 'Lucida Sans';
+    text-align: center;
+    color: red;
+}
+.container {    
+    align-items: center;
+    justify-content: center;
+     width:fit-content;
+     height:80vh; 
+}
+
+.videoContainer {
+    margin: auto;
+    height: 80vh;
+}
+.video {
+    width: 700px;
+    height: auto;
+}
+
+.videoContent {
+    border: 10px groove rgb(73, 72, 72);
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.backgroundContainer {   
+    
+    width:fit-content;
+    height:fit-content;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2px; 
+    background-color: blanchedalmond;
+}
+
+.file-upload:hover {
+  box-shadow: #00360e 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.1);
+}
+
+input {
+    display: none;
+}
+
+.file-upload {
+    width: fit-content;
+    height: auto;
+    cursor: pointer;
+    background: #497502f6;
+    border-radius: 3px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    font-family:cursive;
+}
+
+
+/* .backgrounds {
+    width:fit-content;
+    height: fit-content;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+} */
+.backgrounds img {
+    width:auto;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 1vh;
+    object-fit: cover;
+    transform: scaleX(-1);
+    border: 5px solid rgb(0, 0, 0);
+}
+
+@media (max-width: 769px) {
+    .container {
+        flex-direction: column;
+        max-width: 100vw;
+    }
+    .videoContainer {
+        width: fit-content;
+        height: auto;
+    }
+    .video {
+        height:auto;
+        width: 90vw;
+    }
+    /* .backgroundContainer {
+        width: 80%;
+        height: 50%;
+    } */
+    .videoContent {
+        width: 95%;
+        height: 95%;
+        margin-bottom: 0px;
+    }
+    .backgrounds {
+        width: 95%;
+        height: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .file-upload {
+        margin-bottom: 5px;
+    }
+}
